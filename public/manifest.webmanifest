@@ -1,0 +1,25 @@
+{
+  "short_name": "Counter",
+  "name": "Counter-App",
+  "description": "Counter for counting various stuff",
+  "icons": [
+    {
+      "src": "img/icon_192.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "img/icon_512.png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "img/icon.svg",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#6200ee",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#6200ee"
+}
