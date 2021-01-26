@@ -11,14 +11,21 @@ body {
   background-color: #fafafa;
 }
 
+.logo32 {
+  width: 32px;
+  height: 32px;
+}
+
 header {
   height: 6vh;
+  min-width: 64px;
   padding: 0px 16px;
   background-color: $primaryColor;
   color: $onPrimaryColor;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 8px;
   @include BoxShadow(1);
 }
 

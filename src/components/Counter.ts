@@ -16,6 +16,7 @@ class Counter {
 
     this.count = parseInt(localStorage.getItem('count') ?? '0');
 
+    this.counter.addEventListener('click', () => this.increment());
     this.incBtn.addEventListener('click', () => this.increment());
     this.decBtn.addEventListener('click', () => this.decrement());
     this.rstBtn.addEventListener('click', () => this.reset());
