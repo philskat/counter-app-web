@@ -3,6 +3,9 @@
 This is a web-version of my own [counter-app](https://github.com/philskat/counter-app).
 It should be using PWA technology to be installed on every device.
 
+The app is available under
+[counter-app.dd-dns.de](https://counter-app.dd-dns.de).
+
 ## Usage
 
 Listed are the commands configured in the `package.json`.
