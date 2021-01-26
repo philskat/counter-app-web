@@ -21,10 +21,11 @@ module.exports = {
     }),
     new MiniCssExtractPlugin(),
     new GenerateSW({
+      exclude: [/\.js$/],
       runtimeCaching: [
         {
           urlPattern: '/',
-          handler: 'CacheFirst',
+          handler: 'StaleWhileRevalidate',
           options: {
             cacheName: 'sites',
           },
