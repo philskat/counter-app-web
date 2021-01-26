@@ -14,7 +14,7 @@ class Counter {
     this.decBtn = document.getElementById('decBtn') as HTMLButtonElement;
     this.rstBtn = document.getElementById('reset') as HTMLButtonElement;
 
-    this.count = 0;
+    this.count = parseInt(localStorage.getItem('count') ?? '0');
 
     this.incBtn.addEventListener('click', () => this.increment());
     this.decBtn.addEventListener('click', () => this.decrement());
@@ -25,6 +25,7 @@ class Counter {
 
   private update() {
     this.counter.textContent = this.count.toString();
+    localStorage.setItem('count', this.count.toString());
   }
 
   increment() {
