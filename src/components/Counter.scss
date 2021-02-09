@@ -10,6 +10,10 @@
   user-select: none;
 }
 
+#counter:active {
+  -webkit-tap-highlight-color: transparent;
+}
+
 #buttons {
   width: 100%;
   max-width: 600px;

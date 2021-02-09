@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', 'sans-serif';
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -68,7 +69,7 @@ button::after {
   transition: all 0.1s;
 }
 
-button:hover::after {
+button:active::after {
   background-color: #b1b1b165;
 }
 
