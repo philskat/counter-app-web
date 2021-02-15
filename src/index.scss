@@ -13,8 +13,11 @@ body {
 }
 
 .logo32 {
-  width: 32px;
-  height: 32px;
+  min-width: 32px !important;
+  max-width: 32px !important;
+
+  min-height: 32px !important;
+  max-height: 32px !important;
 }
 
 header {
@@ -48,6 +51,18 @@ h1 {
 }
 
 button {
+  @extend .btn;
+}
+
+button::after {
+  @extend .btn::after;
+}
+
+button:hover::after {
+  @extend .btn:hover::after;
+}
+
+.btn {
   min-width: 64px;
   height: 32px;
   position: relative;
@@ -56,9 +71,10 @@ button {
   border-radius: 8px;
   outline: none;
   font-weight: bold;
+  cursor: pointer;
 }
 
-button::after {
+.btn::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -69,7 +85,7 @@ button::after {
   transition: all 0.1s;
 }
 
-button:active::after {
+.btn:hover::after {
   background-color: #b1b1b165;
 }
 
