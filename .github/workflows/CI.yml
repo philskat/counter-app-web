@@ -3,12 +3,28 @@ name: CI
 on:
   push:
     branches: [main, develop]
+    paths-ignore: 
+      - 'README.md'
+      - 'LICENSE'
+      - 'img/**'
+      - '.github/workflows/codeql-analysis.yml'
+      - '.github/workflows/CD.yml'
+      
   pull_request:
     branches: [main, develop]
+    paths-ignore: 
+      - 'README.md'
+      - 'LICENSE'
+      - 'img/**'
+      - '.github/workflows/codeql-analysis.yml'
+      - '.github/workflows/CD.yml'
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node_version: ['12', '14', '16']
 
     steps:
       - uses: actions/checkout@v2
@@ -17,10 +33,13 @@ jobs:
 
       - uses: actions/setup-node@v2.1.4
         with:
-          node-version: 12.x
+          node-version: ${{ matrix.node_version }}
 
       - name: Install dependencies
         run: npm install
+
+      - name: Lint Code
+        run: npm run lint
 
       - name: Build App
         run: npm run build
