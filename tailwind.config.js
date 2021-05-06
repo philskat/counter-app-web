@@ -3,13 +3,15 @@ const colors = require('tailwindcss/colors');
 
 module.exports = {
   purge: ['public/index.html', 'src/**/*.{js,ts,css}'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     colors: {
       gray: colors.gray,
       background: {
         DEFAULT: colors.gray[100],
+        dark: /*colors.gray[900],*/ '#121212',
         text: colors.gray[900],
+        dtext: colors.gray[50],
       },
 
       primary: {
@@ -35,6 +37,8 @@ module.exports = {
   variants: {
     extend: {
       backgroundColor: ['active'],
+      filter: ['dark'],
+      invert: ['dark'],
     },
   },
   plugins: [],
