@@ -1,5 +1,3 @@
-import './Counter.scss';
-
 class Counter {
   private counter: HTMLParagraphElement;
   private incBtn: HTMLButtonElement;

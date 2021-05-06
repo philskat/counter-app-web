@@ -1,6 +1,8 @@
+/* eslint-disable */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const { GenerateSW } = require('workbox-webpack-plugin');
@@ -56,13 +58,16 @@ module.exports = {
         use: 'ts-loader',
       },
       {
-        test: /\.s[ac]ss$/,
+        test: /\.css$/,
         use: [
           MODE === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
-          'css-loader',
-          'sass-loader',
+          { loader: 'css-loader', options: { importLoaders: 1 } },
+          'postcss-loader',
         ],
       },
     ],
+  },
+  optimization: {
+    minimizer: [`...`, new CssMinimizerPlugin()],
   },
 };

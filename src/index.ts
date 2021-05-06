@@ -1,5 +1,5 @@
 import './components/Counter';
-import './index.scss';
+import './index.css';
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {

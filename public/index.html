@@ -24,27 +24,34 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <header>
-      <h1>Counter App</h1>
+  <body class="bg-background h-screen flex flex-col">
+    <header
+      class="px-4 py-2 pr-4 bg-primary text-primary-text flex justify-center items-center gap-4 shadow-md"
+    >
+      <h1 class="flex-1 text-lg font-semibold">Counter App</h1>
       <a
         href="https://github.com/philskat/counter-app-web"
         target="_blank"
-        class="btn logo32"
+        class="btn min-w-min focus:ring-offset-primary"
       >
-        <img class="logo32" src="img/GitHub.png" />
+        <img class="h-8" class="logo32" src="img/GitHub.png" />
       </a>
-      <button id="reset">Reset</button>
+      <button class="btn focus:ring-offset-primary" id="reset">Reset</button>
     </header>
 
-    <div id="content">
-      <div id="counterWrapper">
-        <p id="counter">0</p>
+    <div class="flex-1 flex flex-col items-center p-8">
+      <div class="flex-1 flex items-center">
+        <p
+          id="counter"
+          class="text-9xl text-background-text select-none cursor-pointer"
+        >
+          0
+        </p>
       </div>
 
-      <div id="buttons">
-        <button id="incBtn" class="btn-secondary">+</button>
-        <button id="decBtn" class="btn-outlined">-</button>
+      <div class="w-full max-w-xl flex flex-col gap-4">
+        <button id="incBtn" class="btn btn-primary">+</button>
+        <button id="decBtn" class="btn btn-outlined">-</button>
       </div>
     </div>
   </body>
