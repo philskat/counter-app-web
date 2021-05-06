@@ -3,21 +3,23 @@ name: CI
 on:
   push:
     branches: [main, develop]
-    paths-ignore: 
+    paths-ignore:
       - 'README.md'
       - 'LICENSE'
       - 'img/**'
       - '.github/workflows/codeql-analysis.yml'
       - '.github/workflows/CD.yml'
-      
+      - '.github/dependabot.yml'
+
   pull_request:
     branches: [main, develop]
-    paths-ignore: 
+    paths-ignore:
       - 'README.md'
       - 'LICENSE'
       - 'img/**'
       - '.github/workflows/codeql-analysis.yml'
       - '.github/workflows/CD.yml'
+      - '.github/dependabot.yml'
 
 jobs:
   build:
