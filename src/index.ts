@@ -1,9 +1,13 @@
-import './components/Counter';
-import './themeHandler';
-import './index.css';
+import App from './App.svelte';
 
-/*if ('serviceWorker' in navigator) {
+const app = new App({
+  target: document.body,
+});
+
+if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js');
+    navigator.serviceWorker.register('/sw.js');
   });
-}*/
+}
+
+export default app;

@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#6200ee" />
     <meta
@@ -14,46 +15,20 @@
     <title>Counter App</title>
 
     <link rel="manifest" href="/manifest.webmanifest" />
-    <link rel="icon" href="/img/icon_192.png" />
+    <link rel="icon" type="/image/png" href="/img/icon_192.png" />
     <link rel="apple-touch-icon" href="/img/icon_192.png" />
+    <link rel="stylesheet" href="/build/bundle.css" />
 
-    <!-- Google Fonts -->
+    <script defer src="/build/bundle.js"></script>
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
     />
   </head>
+
   <body
-    class="bg-background text-background-text h-screen flex flex-col dark:bg-background-dark dark:text-background-dtext"
-  >
-    <header
-      class="px-4 py-2 pr-4 bg-primary text-primary-text flex justify-center items-center gap-6 shadow-md"
-    >
-      <h1 class="flex-1 text-lg font-semibold">Counter App</h1>
-
-      <button id="themeChanger" class="btn min-w-min focus:ring-offset-primary">
-        <img class="h-8 filter invert" src="img/dark_mode.svg" alt="Theme" />
-      </button>
-      <a
-        href="https://github.com/philskat/counter-app-web"
-        target="_blank"
-        class="btn min-w-min focus:ring-offset-primary"
-      >
-        <img class="h-8 filter invert" class="logo32" src="img/GitHub.svg" />
-      </a>
-      <button class="btn focus:ring-offset-primary" id="reset">Reset</button>
-    </header>
-
-    <div class="flex-1 flex flex-col items-center p-8">
-      <div class="flex-1 flex items-center">
-        <p id="counter" class="text-9xl select-none cursor-pointer">0</p>
-      </div>
-
-      <div class="w-full max-w-xl flex flex-col gap-4">
-        <button id="incBtn" class="btn btn-primary">+</button>
-        <button id="decBtn" class="btn btn-outlined">-</button>
-      </div>
-    </div>
-  </body>
+    class="bg-background text-background-text h-screen w-full flex flex-col dark:bg-background-dark dark:text-background-dtext"
+  ></body>
 </html>
