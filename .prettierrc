@@ -5,6 +5,7 @@
   "singleQuote": true,
   "arrowParens": "avoid",
   "bracketSpacing": true,
+  "endOfLine": "crlf",
   "svelteBracketNewLine": true,
   "svelteIndentScriptAndStyle": true,
   "svelteSortOrder": "options-scripts-markup-styles",
