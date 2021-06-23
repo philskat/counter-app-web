@@ -35,7 +35,7 @@ jobs:
     needs: build
 
     steps:
-      - uses: actions/download-artifact@v2.0.9
+      - uses: actions/download-artifact@v2.0.10
         with:
           name: public
           path: public
