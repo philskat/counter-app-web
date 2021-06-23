@@ -9,7 +9,7 @@
     "dev": "rollup -c -w",
     "lint": "eslint . --ignore-path .gitignore --ext .ts,.svelte src",
     "format": "prettier --write --ignore-path .gitignore --plugin-search-dir=. **/*.{ts,svelte,js,json}",
-    "validate": "svelte-check",
+    "check": "svelte-check",
     "test": "jest",
     "test:watch": "jest --watch"
   },
