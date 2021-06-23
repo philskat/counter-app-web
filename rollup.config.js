@@ -72,15 +72,23 @@ export default {
       generateSW({
         swDest: 'public/sw.js',
         globDirectory: 'public',
+        globPatterns: ['*.{webmanifest,html}'],
         skipWaiting: true,
         clientsClaim: true,
         mode: production ? 'production' : 'development',
         runtimeCaching: [
           {
-            urlPattern: '/',
+            urlPattern: /\.(js|html|css)$/,
             handler: 'StaleWhileRevalidate',
             options: {
               cacheName: 'sites',
+            },
+          },
+          {
+            urlPattern: /\.(?:png|jpg|jpeg|svg)$/,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'images',
             },
           },
         ],
