@@ -15,4 +15,4 @@
 <Tailwindcss />
 
 <Header reset={() => counter.update(reset)} />
-<Counter bind:counter={counter} />
+<Counter bind:counter />
