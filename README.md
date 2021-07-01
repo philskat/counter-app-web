@@ -1,6 +1,7 @@
 [![CI](https://github.com/philskat/counter-app-web/workflows/CI/badge.svg?branch=main)](https://github.com/philskat/counter-app-web/actions?query=workflow%3ACI)
 [![CodeQL](https://github.com/philskat/counter-app-web/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/philskat/counter-app-web/actions/workflows/codeql-analysis.yml)
 [![License](https://img.shields.io/github/license/philskat/counter-app-web)](https://github.com/philskat/counter-app-web/blob/main/LICENSE)
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-ready--to--code-908a85?logo=gitpod)](https://gitpod.io/#https://github.com/philskat/counter-app-web)
 
 # Counter App Web
 
