@@ -23,6 +23,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         node_version: ['12', '14', '16']
 
@@ -31,7 +32,7 @@ jobs:
         with:
           lfs: true
 
-      - uses: actions/setup-node@v2.1.5
+      - uses: actions/setup-node@v2.4.0
         with:
           node-version: ${{ matrix.node_version }}
 
