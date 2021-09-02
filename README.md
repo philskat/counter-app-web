@@ -1,5 +1,6 @@
 [![CI](https://github.com/philskat/counter-app-web/workflows/CI/badge.svg?branch=main)](https://github.com/philskat/counter-app-web/actions?query=workflow%3ACI)
 [![CodeQL](https://github.com/philskat/counter-app-web/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/philskat/counter-app-web/actions/workflows/codeql-analysis.yml)
+![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/philskat/counter-app-web)
 [![License](https://img.shields.io/github/license/philskat/counter-app-web)](https://github.com/philskat/counter-app-web/blob/main/LICENSE)
 
 # Counter App Web
