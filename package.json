@@ -52,7 +52,7 @@
     "rollup-plugin-workbox": "^6.1.1",
     "svelte": "^3.42.4",
     "svelte-check": "^2.2.5",
-    "svelte-jester": "^1.7.0",
+    "svelte-jester": "^2.1.5",
     "svelte-preprocess": "^4.8.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.2",
     "ts-jest": "^27.0.4",
