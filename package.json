@@ -25,7 +25,7 @@
   "homepage": "https://github.com/philskat/counter-app-web#readme",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.2",
-    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@rollup/plugin-node-resolve": "^15.1.0",
     "@rollup/plugin-typescript": "^10.0.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/svelte": "^3.2.2",
